@@ -7,7 +7,7 @@ import (
 
 func TestGetGUID(t *testing.T) {
 	i := 1
-	m := make(map[string]struct{}, 0)
+	m := make(map[string]struct{})
 	for i < 5000 {
 		c := Code8()
 		if _, ok := m[c]; ok {
